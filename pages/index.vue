@@ -6,9 +6,9 @@
     <h1>Galaxy Raiders</h1>
     <h2>EP3 - TecProg2 - 2023</h2>
     <div id="buttons">
-      <button>Start Game</button>
-      <button>Leatherboard</button>
-      <button>Quit</button>
+      <NuxtLink to = "/Game"><button>Start Game</button></NuxtLink>
+      <NuxtLink to = "/Leatherboard"><button>Leatherboard</button></NuxtLink>
+      <NuxtLink to = "http://lattes.cnpq.br/2118391660819227"><button>Quit</button></NuxtLink>
     </div>
   </body>
 </template>
@@ -60,11 +60,14 @@
   button:hover
   {
     background-color: white;
-    color: black;
   }
   button:active
   {
     background-color: rgba(0, 18, 44, 0.616);
     color: white;
   }
+  a {text-decoration: none;}
+  a:hover {color: black; }
+  a:visited {color: white;}
+
 </style>
